@@ -67,4 +67,46 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `yarn build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)\
+
+
+
+Notes :-
+
+Folder Structure : 
+
+1. package.json- a. Contains different scripts which can be run by command - npm run $ScriptName.
+
+2. index.html- 
+a. It is a normal html page. We will never add html pages in this projects.
+
+b. Inside this index.html we have 
+'<noscript>You need to enable JavaScript to run this app.</noscript>'
+'<div id="root"></div>' this.
+this is important as here we actually mount our react application.
+
+3. manifest.json-
+a. Here we can define some metadata about our application.
+
+4. src folder.
+    4.1 index.js- 
+        a.It gets access to our root elemented yo our DOM in our html file. 
+        b.It also render our react application with render method.
+    ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
+
+    4.2 App.js-
+
+
+What is DOM?
+When a web page is loaded, the browser creates a Document Object Model of that page.
+The Document Object Model is a cross-platform and language-independent interface that treats an XML or HTML document as a tree structure wherein each node is an object representing a part of the document. The DOM represents a document with a logical tree
+        
+Understanding JSX?
+
+
+
