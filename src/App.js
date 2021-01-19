@@ -1,15 +1,19 @@
-import React, { Component } from 'react';
-// import logo from './logo.svg'; 
+import React from 'react';
 import './App.css';
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import LoginPage from "../src/Components/Login/LoginPage"
 
-class App extends Component {
+class App extends React.Component {
   render() {
-    // return (
-    //   <div className="App">
-    //     <h1>Hi, I'm a React App</h1>
-    //   </div>
-    // );
-    return React.createElement('div', { className: 'App' }, React.createElement('h1', { className: 'App' }, React.createElement('h1', null, "It really works nowww")))
+    return (
+      <Router>
+        <div className="App">
+        <Route exact path="/" component={LoginPage} />
+
+        </div>
+      </Router>
+    );
+    // return React.createElement('div', { className: 'App' }, React.createElement('h1', { className: 'App' }, React.createElement('h1', null, "It really works nowww")))
   }
 }
 
