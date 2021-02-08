@@ -61,6 +61,7 @@ class LoginPage extends React.Component {
     onChange = e => {
         this.setState({ [e.target.id]: e.target.value });
     };
+    
     StartOver = () => {
         this.setState({
             topVisible: true,
@@ -71,9 +72,33 @@ class LoginPage extends React.Component {
         })
     }
 
+    onClickLogin = () => {
+        this.props.history.push({
+            pathname: "/Login",
+        });
+
+    }
+
+    onClickSignUp = () => {
+        this.props.history.push({
+            pathname: "/SignUp"
+        })
+    }
+
     render() {
         return (
             <div>
+                <div style={{ marginTop: 20 }}>
+                    <Button
+                        onClick={this.onClickLogin}>
+                        Login
+                            </Button>
+                </div>
+                <div style={{ marginTop: 20 }}>
+                    <Button
+                        onClick={this.onClickSignUp}>
+                        Sign Up</Button>
+                </div>
                 {this.state.topVisible ?
                     <h1>Enter Your Name</h1>
                     :

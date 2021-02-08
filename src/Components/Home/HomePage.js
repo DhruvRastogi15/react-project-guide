@@ -15,7 +15,8 @@ class HomePage extends React.Component {
     render() {
         return (
             <div>
-<div style={{ marginLeft: 100, marginRight: 100, height: 100, alignItems: 'center', justifyContent: 'center', borderRadius: 10 }}>
+                <h1>This is Home Page</h1>
+{/* <div style={{ marginLeft: 100, marginRight: 100, height: 100, alignItems: 'center', justifyContent: 'center', borderRadius: 10 }}>
                         <div style={{}}>
                             <div style={{}}>
                                 <Button
@@ -37,7 +38,7 @@ class HomePage extends React.Component {
                             style={{ height: 40, width: 100, color: 'red', borderRadius: 10, marginTop: 20 }}>
                             Start Over.
                         </Button>
-                    </div>
+                    </div> */}
             </div>
         );
     }
