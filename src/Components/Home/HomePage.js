@@ -1,5 +1,4 @@
 import React from 'react'
-import Button from 'react-bootstrap/Button';
 
 class HomePage extends React.Component {
     constructor() {
