@@ -1,4 +1,5 @@
 import React from 'react'
+import Header from "../CommonComponents/Header";
 
 class HomePage extends React.Component {
     constructor() {
@@ -13,32 +14,11 @@ class HomePage extends React.Component {
 
     render() {
         return (
-            <div>
-                <h1>This is Home Page</h1>
-{/* <div style={{ marginLeft: 100, marginRight: 100, height: 100, alignItems: 'center', justifyContent: 'center', borderRadius: 10 }}>
-                        <div style={{}}>
-                            <div style={{}}>
-                                <Button
-                                    onClick={this.onPress}
-                                    style={{ height: 40, width: 100, marginRight: 40, marginTop: 10, color: 'green', borderRadius: 10 }}
-                                >
-                                    Press Me!!
-                        </Button>
-                                <Button
-                                    onClick={this.onPressReset}
-                                    style={{ height: 40, width: 100, color: 'red', borderRadius: 10 }}>
-                                    Reset
-                        </Button>
-
-                            </div>
-                        </div>
-                        <Button
-                            onClick={this.StartOver}
-                            style={{ height: 40, width: 100, color: 'red', borderRadius: 10, marginTop: 20 }}>
-                            Start Over.
-                        </Button>
-                    </div> */}
+            <div style={{ background: 'linear-gradient(to left,rgba(350,100,10,5),transparent)', height: 100, marginTop: 0,justifyContent:'flex-start' }}>
+                <h1>Dhruv</h1>
             </div>
+
+
         );
     }
 }

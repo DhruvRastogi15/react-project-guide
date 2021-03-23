@@ -5,6 +5,7 @@ import LoginPage from "../src/Components/Login/LoginPage"
 import HomePage from "../src/Components/Home/HomePage"
 import Login from "../src/Components/Login/Login"
 import SignUp from "../src/Components/Login/SignUp"
+import OddEven from "../src/Components/Programs/OddEven"
 
 class App extends React.Component {
   render() {
@@ -15,6 +16,7 @@ class App extends React.Component {
           <Route exact path="/Login" component={Login} />
           <Route exact path="/SignUp" component={SignUp} />
           <Route exact path="/HomePage" component={HomePage} />
+          <Route exact path="/OddEven" component={OddEven} />
         </div>
       </Router>
     );

@@ -84,7 +84,11 @@ class LoginPage extends React.Component {
             pathname: "/SignUp"
         })
     }
-
+    onClickFoodMenu = () => {
+        this.props.history.push({
+            pathname: "/OddEven"
+        })
+    }
     render() {
         return (
             <div>
@@ -98,6 +102,11 @@ class LoginPage extends React.Component {
                     <Button
                         onClick={this.onClickSignUp}>
                         Sign Up</Button>
+                </div>
+                <div style={{ marginTop: 20 }}>
+                    <Button
+                        onClick={this.onClickFoodMenu}>
+                        Odd Even</Button>
                 </div>
                 {this.state.topVisible ?
                     <h1>Enter Your Name</h1>
