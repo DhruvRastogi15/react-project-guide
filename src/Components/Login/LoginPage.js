@@ -109,7 +109,7 @@ class LoginPage extends React.Component {
                         Odd Even</Button>
                 </div>
                 {this.state.topVisible ?
-                    <h1>Enter Your Name</h1>
+                    <h1>Please Enter Your Name</h1>
                     :
                     null
                 }
@@ -133,7 +133,7 @@ class LoginPage extends React.Component {
                     null
                 }
                 {this.state.bottomVisible ?
-                    <h1>Hello {this.state.name2}</h1>
+                    <h1>Hey {this.state.name2}</h1>
                     :
                     null
                 }

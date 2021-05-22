@@ -432,4 +432,3 @@ The only place where we can assign this.state is constructor.
 
 2. State updates may be Asynchronous.
 
-

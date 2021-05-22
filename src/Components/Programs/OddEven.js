@@ -1,5 +1,4 @@
 import React from 'react'
-import { Button } from 'react-bootstrap'
 
 class OddEven extends React.Component {
     constructor() {
@@ -24,7 +23,7 @@ class OddEven extends React.Component {
         this.setState({ [e.target.id]: e.target.value });
     }
     onClick = () => {
-        if (this.state.number % 2 == 0) {
+        if (this.state.number % 2 === 0) {
             this.setState({
                 type: 'even'
             })
